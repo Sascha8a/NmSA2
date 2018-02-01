@@ -1,0 +1,23 @@
+{
+  "name": "nmsa2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^1.3.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "graphql": "^0.12.3",
+    "graphql-tools": "^2.19.0",
+    "lodash": "^4.17.4"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "yarn build && node lib/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
